@@ -1,0 +1,130 @@
+/*min-width: 320px - 768px*/
+
+@media screen and (min-width: 320px) {
+    .body__main {
+        flex-direction: column;
+        width: 100vw;
+        height: 74vh;
+    }
+
+    .body__main--title {
+        color: var(--colorSubtitle);
+        font-family: var(--fontBigTitle);
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .body__main--ctn {        
+        width: 100vw;
+        height: 70vh;
+        background-color: var(--colorBG);
+        padding-bottom: 5.5rem;
+        overflow-y: auto;
+    }
+
+    .body__main--ctn-formation {
+        width: 300px;
+        height: 30vh;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid var(--colorSubtitle);
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
+    .body__main--ctn-formation-head {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .2rem;
+    }
+
+    .body__main--ctn-formation-head-img {
+        width: 5rem;
+        margin-top: .5rem;
+        border-radius: .5rem;
+    }
+
+    .body__main--ctn-formation-head-details {
+        line-height: 1.25;
+        width: 50%;
+        padding-top: .3rem;
+    }
+
+    .body__main--ctn-formation-head-details-title, .body__main--ctn-formation-head-details-subtitle {
+        color: var(--colorSubtitle);
+        font-family: var(--fontSmallTitle);
+        font-size: .8rem;
+        margin-left: .2rem;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+        line-height: 1.5;
+    }
+
+    .body__main--ctn-formation-head-details-more {
+        color: var(--colorSubtitle);
+        font-family: var(--fontBigTitle);
+        font-size: .7rem;
+        font-style: italic;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+        line-height: 1.5;
+    }
+
+    .body__main--ctn-formation-languages {
+        width: 90%;
+        height: 7vh;
+        margin: 1rem;        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        
+    }
+
+    .body__main--ctn-formation-languages-logo {
+        height: 6.6vh;
+        width: 12.5%;
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body__main--ctn-formation-languages-logo-img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .body__main--ctn-formation-languages-logo-txt {
+        width: 3rem;
+        text-align: center;
+        font-size: .8rem;
+        color: var(--colorSmallTitle);
+        margin-top: .5rem;
+    }
+
+    .body__main--ctn-formation-more {
+        width: 35vw;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: -2rem;
+    }
+
+    .body__main--ctn-formation-more-link {
+        text-decoration: none;
+        background-color: var(--colorSubtitle);
+        padding: .5rem;
+        color: var(--colorBgMain);
+        font-family: 'MontSerrat';
+        border-radius: .5rem;
+    }
+}
