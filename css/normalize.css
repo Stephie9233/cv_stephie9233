@@ -1,0 +1,182 @@
+
+/**************** VARIABLES ***************/
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(../assets/fonts/Cinzel/Cinzel-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Cinzel-bold';
+    src: url(../assets/fonts/Cinzel/Cinzel-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Prociono';
+    src: url(../assets/fonts/Prociono/Prociono-Regular.otf);
+}
+
+:root {
+    --fontBigTitle: 'Cinzel-bold';
+    --fontSmallTitle: 'Cinzel';
+    --fontText: 'Prociono';
+    --colorHeader: rgb(174, 190, 212);
+    --colorTitleMain: #125797;
+    --colorSmallTitle: #023353;
+    --colorText: #05080a;
+    --colorSubtitle: #138019;
+    --colorBgMain:#f6f6f7;
+}
+
+/**************** RESET ***************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorBgMain);
+    color: var(--colorText);
+    position: relative;
+}
+
+/**************** HEADER ***************/
+
+/*min-width: 320px - 768px*/
+
+@media screen and (min-width: 320px) {
+    .body__header {
+        background-color: var(--colorHeader);
+        color: var(--colorTitleMain);
+        font-family: var(--fontSmallTitle);
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .body__header--title {
+        width: 100vw;
+        height: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 1rem 0 .5rem 0;
+        color: var();
+    }
+
+    .body__header--nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .5rem 0;
+        padding-bottom: .5rem;
+        position: relative;
+        bottom: 0;
+    }
+
+    .body__header--nav-link {
+        text-decoration: none;
+        color: var(--colorSmallTitle);
+        font-family: var(--fontBigTitle);
+        font-size: .8rem;
+        height: 75%;
+        width: 25%;
+        height: auto;
+        text-align: center;
+        cursor: pointer;
+        transition:
+            filter 0.3s ease-out,
+            transform 0.3s ease-out;
+        will-change: transform;
+    }
+
+    .body__header--nav:has(.body__header--nav-link:hover) .body__header--nav-link:not(:hover) {
+        filter: blur(5px);
+        transform: scale(.95);
+    }
+
+    .body__header--nav-link:hover {
+        transform: scale(1.05);
+    }
+
+    .body__header--article {
+        margin: 0;
+        padding: .5rem 0;
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;        
+        background-color: var(--colorBgMain);   
+        border-bottom: 1px solid var(--colorTitle);
+    }
+
+    .body__header--article-nav {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body__header--article-nav-link {
+        width: 25%;
+        height: 100%;        
+        padding: .5rem auto;
+    }
+
+    .body__header--article-nav-txt {
+        margin-right: .8rem;
+        padding: .3rem auto 1rem auto;
+        text-decoration: none;
+        font-family: var(--fontSmallTitle);
+        font-weight: 700;
+        font-size: .9rem;
+        color: var(--colorSmallTitle);
+    }
+
+    .body__header--article-nav-link-img {
+        width: 2rem;
+    }
+
+    .body__main {
+        height: 74vh;
+    }
+
+    .body__footer {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 6vh;
+        background: var(--colorHeader);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body__footer--p {
+        color: var(--colorTitleMain);
+        font-family: var(--fontText);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .body__footer--p-span {
+        font-style: italic;
+        color: #138019;
+        font-weight: 900;
+    }
+    
+}
