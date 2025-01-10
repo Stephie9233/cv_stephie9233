@@ -20,7 +20,7 @@ const formations = [
         session: "Avril - juin 24",
         duration: "Bootcamp 400 h",
         languages: [
-            {img: "SQK.svg", name: "SQL"},
+            {img: "sql.svg", name: "SQL"},
             {img: "php.svg", name: "PHP"},
             {img: "composer.svg", name: "Composer"},
             {img: "Symfony.svg", name: "Symfony"}
@@ -34,7 +34,10 @@ const formations = [
         session: "Sept. - Nov 22",
         duration: "Bootcamp 315 h",
         languages: [
-            {img: "SQK.svg", name: "SQL"},
+            {img: "sql.svg", name: "SQL"},
+            {img: "SQK.svg", name: "mySQL"},
+            {img: "sql_server.png", name: "Microsoft SQL Server"},
+            {img: "oracle.svg", name: "Oracle"}
         ],
         program: "FormationABD.pdf"
     },
