@@ -1,47 +1,88 @@
 /*min-width: 320px - 768px*/
 
-@media screen and (min-width: 320px) {
-    .body__main {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        position: relative;
-        top: 2vh;
-        height: 74vh;
-    }
+.body__main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 2vh;
+    height: 74vh;
+}
 
-    .body__main--ctn {
-        width: 90vw;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        overflow: auto;
-        margin: auto;
-    }
+.body__main--ctn {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: auto;
+    margin: auto;
+}
 
+.body__main--ctn-img {
+    width: 50%;
+    border: 3px solid #138019;
+    border-radius: 100%;
+    margin: 1.2rem 0;
+}
+
+.body__main--ctn-article {
+    margin: 1.5rem;
+    width: 90%; 
+}
+
+.body__main--ctn-article-title {
+    color: var(--colorSubtitle);
+    font-size: 1.2rem;
+    font-family: var(--fontBigTitle);
+    margin-bottom: 1.2rem;
+}
+
+.body__main--ctn-article-p {
+    line-height: 1.35;
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 768px) {
     .body__main--ctn-img {
-        width: 50%;
-        border: 3px solid #138019;
-        border-radius: 100%;
-        margin: 1.2rem 0;
+        width: 35%;
     }
 
     .body__main--ctn-article {
         margin: 1.5rem;
-        width: 90%; 
+        width: 80%; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .body__main--ctn-img {
+        width: 28%;
+        margin-top: 2.5rem;
     }
 
-    .body__main--ctn-article-title {
-        color: var(--colorSubtitle);
-        font-size: 1.2rem;
-        font-family: var(--fontBigTitle);
-        margin-bottom: 1.2rem;
+    .body__main--ctn-article {
+        margin: 1.5rem;
+        width: 70%; 
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .body__main--ctn-img {
+        width: 18%;
+        margin-top: 6.5rem;
+    }
+
+    .body__main--ctn-article {
+        margin: 1.5rem;
+        width: 60%; 
+    }
+
+    .body__main--ctn-article-title  {
+        font-size: 1.5rem;
     }
 
     .body__main--ctn-article-p {
-        line-height: 1.35;
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
 }
