@@ -41,6 +41,7 @@
     font-size: .8rem;
     margin: .2rem .2rem 2.2rem .2rem;
     padding: .2rem;
+    text-align: center;
 }
 
 .body__main--notice {
@@ -62,7 +63,7 @@
 }
 .body__main--cards-image {
     width: 5rem;
-    height: 4rem;
+    height: fit-content;
     display: flex;
     justify-content: center;
     margin-left: .2rem;
@@ -153,7 +154,7 @@
 }
 
 .body__main--details-title {
-    font-size: 2.5vh;
+    font-size: 1rem;
     font-family: 'Lucida Sans', sans-serif;
     font-weight: 700;
     color: var(--colorHeader);
@@ -164,7 +165,7 @@
 
 .body__main--details-describe {
     width: 90%;
-    text-align: left;
+    text-align: center;
     position: relative;
     margin: .5rem 5% 0 5%;
     font-size: 1.1vh;
@@ -229,3 +230,157 @@
     margin-bottom: 5rem;
 }
 
+@media screen and (min-width: 425px) {
+    .body__main--ctn {
+        width: 80vw;
+    }
+
+    .body__main--article-intro {
+        width: 80vw;        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .body__main--ctn {
+        width: 70vw;
+    }
+
+    .body__main--article-intro {
+        font-size: 1rem;
+    }
+
+    .body__main--cards {
+        height: 14rem;
+    }
+
+    .body__main--cards-image {
+        height: 5rem;
+    }
+
+    .body__main--cards-image-pict {
+        width: 8rem;
+        height: 6rem;
+    }
+
+    .body__main--article-intro {
+        width: 70vw;        
+    }
+
+    .body__main--ctn-details {
+        margin: 1.5rem 10%;
+        width: 80%;
+    }
+
+    .body__main--details-title {
+        font-size: 1.3rem;
+    }
+
+    .body__main--details-describe {
+        width: 80%;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .body__main--ctn {
+        width: 60%;
+    }
+
+    .body__main--article-intro {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    .body__main--cards {
+        width: 50%;
+        margin: 0 7%;
+    }
+
+    .body__main--cards-image {
+        width: 100%;
+    }
+
+    .body__main--cards-image-pict {
+        width: 70%;
+        height: 7rem;
+    }
+
+    .body__main--details-title {
+        font-size: 1.5rem;
+    }
+
+    .body__main--details-describe {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .body__main--ctn {
+        margin-top: 2.5rem;
+    }
+
+    .body__main--article-intro {
+        font-size: 1.5rem;
+        width: 60%;
+        height: 10rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .body__main--cards {
+        height: 20rem;
+        width: 50%;
+        margin: 2.5rem 7% 1rem 7%;
+    }
+
+    .body__main--ctn-details {
+        margin: 1.5rem 15%;
+        width: 70%;
+        height: 45rem;
+    }
+
+    .body__main--details {
+        padding: 1.8rem;
+    }
+
+    .body__main--details-title {
+        font-size: 1.8rem;
+    }
+
+    .body__main--details-describe {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .body__main--details-languages-logo {
+        width: 5rem;
+        height: 5.4rem;
+    }
+
+    .body__main--details-languages-img {
+        height: 4rem;
+        width: 4.2rem;
+        padding-left: .4rem;
+    }
+    
+    .body__main--details-languages-percentile {
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: .2rem;
+        margin-bottom: 1rem;
+        font-family: sans-serif;
+    }
+
+    .body__main--details-languages-btn {
+        padding: .2rem .5rem;
+        margin: 1.5rem auto;
+        width: 90%;
+        font-size: 1rem;
+        position: relative;
+        top: .5rem;
+        bottom: .5rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
